@@ -1,39 +1,56 @@
-const imageList = document.querySelectorAll('.home-image-animation')
+const allHeroCard = document.querySelectorAll(".hero-card");
+const defaultHovered = document.querySelector(".hero-card.hovered");
 
-imageList.forEach(image => {
-    image.addEventListener('mouseover', () => {
-        document.querySelector('#first-image').classList.add('hovered-first-image');
-    })
-    image.addEventListener('mouseout', () => {
-        document.querySelector('#first-image').classList.remove('hovered-first-image');
-    })
-})
+allHeroCard.forEach((e) => {
+	e.addEventListener("pointerenter", (e) => {
+		console.log(e);
+		defaultHovered.classList.remove("hovered");
+	});
 
+	e.addEventListener("pointerleave", (e) => {
+		console.log(e);
+		defaultHovered.classList.add("hovered");
+	});
+});
 
-const featureBtnList = [...document.querySelectorAll('.feature-btn')];
+// const imageList = document.querySelectorAll(".home-image-animation");
 
-featureBtnList.forEach(btn => {
-    btn.addEventListener('click', (event) => {
-        event.preventDefault();
-        document.querySelector('.default-btn').classList.remove('default-btn');
-        btn.classList.add('default-btn');
-    } )
-})
+// imageList.forEach((image) => {
+// 	image.addEventListener("mouseover", () => {
+// 		document.querySelector("#first-image").classList.add("hovered-first-image");
+// 	});
+// 	image.addEventListener("mouseout", () => {
+// 		document
+// 			.querySelector("#first-image")
+// 			.classList.remove("hovered-first-image");
+// 	});
+// });
 
+const featureBtnList = [...document.querySelectorAll(".feature-btn")];
 
-const testimonialContainer = [...document.querySelectorAll('.testimonial-container')];
-const nextBtn = [...document.querySelectorAll('.next-btn')];
-const prevBtn = [...document.querySelectorAll('.prev-btn')];
+featureBtnList.forEach((btn) => {
+	btn.addEventListener("click", (event) => {
+		event.preventDefault();
+		document.querySelector(".default-btn").classList.remove("default-btn");
+		btn.classList.add("default-btn");
+	});
+});
+
+const testimonialContainer = [
+	...document.querySelectorAll(".testimonial-container"),
+];
+const nextBtn = [...document.querySelectorAll(".next-btn")];
+const prevBtn = [...document.querySelectorAll(".prev-btn")];
 
 testimonialContainer.forEach((item, i) => {
-    let containerDimension = item.getBoundingClientRect();
-    let containerWidth = containerDimension.width;
+	let containerDimension = item.getBoundingClientRect();
+	let containerWidth = containerDimension.width;
 
-    nextBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
+	nextBtn[i].addEventListener("click", () => {
+		item.scrollLeft += containerWidth;
+	});
 
-    prevBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
+	prevBtn[i].addEventListener("click", () => {
+		item.scrollLeft -= containerWidth;
+	});
 });

@@ -1,349 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Skillex</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skillex</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="illustration\favicon\apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="illustration\favicon\favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="illustration\favicon\favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="illustration\favicon\apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="illustration\favicon\favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="illustration\favicon\favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-        
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://kit.fontawesome.com/c3fd1d620f.js" crossorigin="anonymous"></script>
-</head>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script
+			src="https://kit.fontawesome.com/c3fd1d620f.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-<body>
-    <section id="navigation-bar">
-        <div class="flex-container">
-            <a href=""><img id="main-logo" src="illustration\logo.png" alt="company's logo"></a>
-            <a class="nav-items" href="">Find Passion</a>
-            <a class="nav-items"  href="">Categories</a>
-            <a class="nav-items"  href="">Skills</a>
-            <a class="nav-items" href="">Customer</a>
+	<body>
+		<section id="navigation-bar">
+			<div class="flex-container">
+				<a href="#"
+					><img id="main-logo" src="illustration\logo.png" alt="company's logo"
+				/></a>
+				<a class="nav-items" href="#">Find Passion</a>
+				<a class="nav-items" href="#">Categories</a>
+				<a class="nav-items" href="#">Skills</a>
+				<a class="nav-items" href="#">Customer</a>
 
-            <a class="nav-items right-align ">Login</a>
-            <button class="nav-button">Free Trial</button>
-        </div>
-    </section>
+				<a class="nav-items right-align">Login</a>
+				<button class="nav-button">Free Trial</button>
+			</div>
+		</section>
 
-    <section id="home">
-        <div class="main-text">
-            <h1>Watch.<br>Learn.<br>Grow.</h1>
-            <form class="main-title-form">
-                <input class="input-passion" type="text" placeholder="Find Your Passion">
-                <input id="search-button" class="main-title-input-button" type="button" value="GO">
-            </form>
-        </div>
+		<section id="home">
+			<div class="main-text">
+				<h1>Watch.<br />Learn.<br />Grow.</h1>
+				<form class="main-title-form">
+					<input
+						class="input-passion"
+						type="text"
+						placeholder="Find Your Passion"
+					/>
+					<input
+						id="search-button"
+						class="main-title-input-button"
+						type="button"
+						value="GO"
+					/>
+				</form>
+			</div>
 
-        <div class="image-container">
-            <div id="first-image" class="first-image">
-                <img id="image1" src="illustration\image1.webp" alt="image-of-woman">
-                <div class="image1-desc">
-                    <p>Our Courses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 Topics</p>
-                </div>
-            </div>
-            <div id="second-image">
-                <img id="image2" class="home-image-animation" src="illustration\image2.webp" alt="image-of-man1">
-                <div class="image2-desc">
-                    <p>Writing</p>
-                </div>
-            </div>
-            <div id="third-image">
-                <img id="image3" class="home-image-animation" src="illustration\image3.webp" alt="image-of-man2">
-                <div class="image3-desc">
-                    <p>Business</p>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div id="not-ideal-1">
+				<div class="hero-card hovered">
+					<div class="img-container">
+						<img src="illustration\image1.webp" alt="Grace" />
+					</div>
+					<div class="desc">
+						<p>Writing</p>
+					</div>
+					<p class="right-desc">100</p>
+				</div>
+				<div class="hero-card">
+					<div class="img-container">
+						<img src="illustration\image2.webp" alt="Filbert" />
+					</div>
+					<div class="desc">
+						<p>Writing</p>
+					</div>
+					<p class="right-desc">100</p>
+				</div>
+				<div class="hero-card">
+					<div class="img-container">
+						<img src="illustration\image3.webp" alt="John" />
+					</div>
+					<div class="desc">
+						<p>Business</p>
+					</div>
+					<p class="right-desc">100</p>
+				</div>
+			</div>
+		</section>
 
-    <section id="feature1">
-        <div>
-            <h1 id="feature1-title">
-                Unlimited Access to Over 100+ Instructor
-            </h1>
-        </div>
-        <hr>
-        <div class="feature-container">
-            <ol id="feature1-list">
-                <li>
-                    <a class="default-btn feature-btn" href="">All Categories</a>
-                </li>
-                <li>
-                    <a class="feature-btn" href="">Entertainment</a>
-                </li>
-                <li>
-                    <a class="feature-btn" href="">Lifestyle</a>
-                </li>
-                <li>
-                    <a class="feature-btn" href="">Writing</a>
-                </li>
-                <li>
-                    <a class="feature-btn" href="">Business</a>
-                </li>
-                <li>
-                    <a class="feature-btn" href="">Food</a>
-                </li>
-            </ol>
-        </div>
+		<section id="feature1">
+			<div>
+				<h1 id="feature1-title">Unlimited Access to Over 100+ Instructor</h1>
+			</div>
+			<hr />
+			<div class="feature-container">
+				<ol id="feature1-list">
+					<li>
+						<a class="default-btn feature-btn" href="#">All Categories</a>
+					</li>
+					<li>
+						<a class="feature-btn" href="#">Entertainment</a>
+					</li>
+					<li>
+						<a class="feature-btn" href="#">Lifestyle</a>
+					</li>
+					<li>
+						<a class="feature-btn" href="#">Writing</a>
+					</li>
+					<li>
+						<a class="feature-btn" href="#">Business</a>
+					</li>
+					<li>
+						<a class="feature-btn" href="#">Food</a>
+					</li>
+				</ol>
+			</div>
 
-        <div class="flex-container feature1-flex-container">
-            <div class="f-image1">
-                <div class="quick-nav-btn">
-                    <div class="quick-nav-back-btn">
-                        <i class="fa-solid fa-rotate-left fa-xl"></i>
-                    </div>
-                    <div class="camera-nav-btn">
-                        <i class="fa-solid fa-camera fa-lg"></i>
-                    </div>
-                </div>
-                <img src="illustration\feature1-image1.webp" alt="feature image 1">
-                <h3>Sales Marketing</h3>
-                <p>3 Months</p>
-            </div>
-            <div class="f-image1">
-                <div class="quick-nav-btn">
-                    <div class="quick-nav-back-btn">
-                        <i class="fa-solid fa-rotate-left fa-xl"></i>
-                    </div>
-                    <div class="camera-nav-btn">
-                        <i class="fa-solid fa-camera fa-lg"></i>
-                    </div>
-                </div>
-                <img src="illustration\feature1-image2.webp" alt="feature image 2">
-                <h3>Data Analytics</h3><p>4 Months</p>
-            </div>
-            <div class="f-image1">
-                <div class="quick-nav-btn">
-                    <div class="quick-nav-back-btn">
-                        <i class="fa-solid fa-rotate-left fa-xl"></i>
-                    </div>
-                    <div class="camera-nav-btn">
-                        <i class="fa-solid fa-camera fa-lg"></i>
-                    </div>
-                </div>
-                <img src="illustration\feature1-image3.webp" alt="feature image 3">
-                <h3>Copywriting Pro</h3><p>2 Months</p>
-            </div>
-            <div class="f-image1">
-                <div class="quick-nav-btn">
-                    <div class="quick-nav-back-btn">
-                        <i class="fa-solid fa-rotate-left fa-xl"></i>
-                    </div>
-                    <div class="camera-nav-btn">
-                        <i class="fa-solid fa-camera fa-lg"></i>
-                    </div>
-                </div>
-                <img src="illustration\feature1-image4.webp" alt="feature image 4">
-                <h3>Design Art</h3>
-                <p>4 Months</p>
-            </div>
-        </div>
-    </section>
+			<div class="flex-container feature1-flex-container">
+				<div class="f-image1">
+					<div class="quick-nav-btn">
+						<div class="quick-nav-back-btn">
+							<i class="fa-solid fa-rotate-left fa-xl"></i>
+						</div>
+						<div class="camera-nav-btn">
+							<i class="fa-solid fa-camera fa-lg"></i>
+						</div>
+					</div>
+					<img src="illustration\feature1-image1.webp" alt="feature image 1" />
+					<h3>Sales Marketing</h3>
+					<p>3 Months</p>
+				</div>
+				<div class="f-image1">
+					<div class="quick-nav-btn">
+						<div class="quick-nav-back-btn">
+							<i class="fa-solid fa-rotate-left fa-xl"></i>
+						</div>
+						<div class="camera-nav-btn">
+							<i class="fa-solid fa-camera fa-lg"></i>
+						</div>
+					</div>
+					<img src="illustration\feature1-image2.webp" alt="feature image 2" />
+					<h3>Data Analytics</h3>
+					<p>4 Months</p>
+				</div>
+				<div class="f-image1">
+					<div class="quick-nav-btn">
+						<div class="quick-nav-back-btn">
+							<i class="fa-solid fa-rotate-left fa-xl"></i>
+						</div>
+						<div class="camera-nav-btn">
+							<i class="fa-solid fa-camera fa-lg"></i>
+						</div>
+					</div>
+					<img src="illustration\feature1-image3.webp" alt="feature image 3" />
+					<h3>Copywriting Pro</h3>
+					<p>2 Months</p>
+				</div>
+				<div class="f-image1">
+					<div class="quick-nav-btn">
+						<div class="quick-nav-back-btn">
+							<i class="fa-solid fa-rotate-left fa-xl"></i>
+						</div>
+						<div class="camera-nav-btn">
+							<i class="fa-solid fa-camera fa-lg"></i>
+						</div>
+					</div>
+					<img src="illustration\feature1-image4.webp" alt="feature image 4" />
+					<h3>Design Art</h3>
+					<p>4 Months</p>
+				</div>
+			</div>
+		</section>
 
-    <section id="feature2">
-        <div class="feature2-main-container">
-            <div class="main-title">
-                <h1>Get the skills you<br>need for a job that<br>is in demand.</h1></div>
-            <div class="main-desc">
-                <p>The modern labor market dictates its own terms.<br>Today, to be a competitive specialist requires more than professional skills.</p>
-                <div class="achievements">
-                    <h1>10</h1>
-                    <p>YEARS EXPERIENCE</p>
-                    <hr>
-                    <h1>250</h1>
-                    <p>Types of course</p>
-                </div>
-            </div>
-        </div>
-        <div class="body-container">
-            <div class="list-of-skills">
-                <div class="leadership">
-                    <div class="star-icon">
-                        <i class="skill-icons fa-regular fa-star fa-2xl" style="color: #e1bc56;"></i>
-                    </div>
-                    <div class="skill-text">
-                        <h3>Leadership</h3>
-                        <p>Fully committed to the success company</p>
-                    </div>
-                </div>
-                <div class="responsibility">
-                    <div class="responsibility-icon">
-                        <i class="skill-icons fa-solid fa-handshake fa-2xl"></i>
-                    </div>
-                    <div class="skill-text">
-                        <h3>Responsibility</h3>
-                        <p>Employees will always be my top priority</p>
-                    </div>
-                </div>
-                <div class="flexibility">
-                    <div class="flexibility-icon">
-                        <i class="skill-icons fa-brands fa-stack-overflow fa-2xl" style="color: #e37316;"></i>
-                    </div>
-                    <div class="skill-text">
-                        <h3>Flexibility</h3>
-                        <p>The ability to switch is an important skill</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <video controls autoplay loop muted class="rand-video" src="illustration\random-video.mp4" type="video/mp4"></video>
-            </div>
-        </div>
-    </section>
+		<section id="feature2">
+			<div class="feature2-main-container">
+				<div class="main-title">
+					<h1>
+						Get the skills you<br />need for a job that<br />is in demand.
+					</h1>
+				</div>
+				<div class="main-desc">
+					<p>
+						The modern labor market dictates its own terms.<br />Today, to be a
+						competitive specialist requires more than professional skills.
+					</p>
+					<div class="achievements">
+						<h1>10</h1>
+						<p>YEARS EXPERIENCE</p>
+						<hr />
+						<h1>250</h1>
+						<p>Types of course</p>
+					</div>
+				</div>
+			</div>
+			<div class="body-container">
+				<div class="list-of-skills">
+					<div class="leadership">
+						<div class="star-icon">
+							<i
+								class="skill-icons fa-regular fa-star fa-2xl"
+								style="color: #e1bc56"
+							></i>
+						</div>
+						<div class="skill-text">
+							<h3>Leadership</h3>
+							<p>Fully committed to the success company</p>
+						</div>
+					</div>
+					<div class="responsibility">
+						<div class="responsibility-icon">
+							<i class="skill-icons fa-solid fa-handshake fa-2xl"></i>
+						</div>
+						<div class="skill-text">
+							<h3>Responsibility</h3>
+							<p>Employees will always be my top priority</p>
+						</div>
+					</div>
+					<div class="flexibility">
+						<div class="flexibility-icon">
+							<i
+								class="skill-icons fa-brands fa-stack-overflow fa-2xl"
+								style="color: #e37316"
+							></i>
+						</div>
+						<div class="skill-text">
+							<h3>Flexibility</h3>
+							<p>The ability to switch is an important skill</p>
+						</div>
+					</div>
+				</div>
+				<div class="video">
+					<video
+						controls
+						autoplay
+						loop
+						muted
+						class="rand-video"
+						src="illustration\random-video.mp4"
+						type="video/mp4"
+					></video>
+				</div>
+			</div>
+		</section>
 
-    <section id="testimonial">
-        <div class="testimonial-title">
-            <h1>What Our Customer Says</h1>
-        </div>
-        <section class="testimonial-slider">
-           
-            <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+		<section id="testimonial">
+			<div class="testimonial-title">
+				<h1>What Our Customer Says</h1>
+			</div>
+			<section class="testimonial-slider">
+				<div class="testimonial-container">
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-                <div class="testimonial-card">
-                    <p class="testimonial-comments">The explainations are clear, teachers are responsible and friendly and the homework is real practice</p>
-                    <div class="person-details">
-                        <img class="testimonial-person-image" src="illustration\testimonial-1.webp" alt="testimonial-person-image">
-                        <div class="person-details2">
-                            <p><b>Rob Zuber</b></p>
-                            <p class="person-job-title">CEO</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <button class="prev-btn"><i class="fa-solid fa-arrow-left fa-xl"></i></button>
-                <button class="next-btn"><i class="fa-solid fa-arrow-right fa-xl"></i></button>
-            </div>
-        </section>
-    </section>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
 
-    <section id="footer">
-        <div class="footer-container-1">
-            <div class="logo">
-                <img src="illustration\logo.png" alt="Company Logo">
-            </div>
-            <div class="quick-nav">
-                <a href="">Find Passion</a>
-                <a href="">Categories</a>
-                <a href="">Skills</a>
-                <a href="">Customer</a>
-            </div>
-            <div class="join-our-community">
-                <h3>Join Our Community</h3>
-                <form class="join-com-form" action="">
-                    <input class="join-com-textfield" type="text" name="" id="" placeholder="Enter Your Email">
-                    <input class="join-com-btn" type="button" value="GO">
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="footer-container-2">
-            <div class="copyright">
-                <p>&#x24B8; All rights belong to  Skillex</p>
-            </div>
-            <div class="socials">
-                <ol class="socials-list">
-                    <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-                    <li><i class="fa-brands fa-instagram fa-lg"></i></li>
-                    <li><i class="fa-brands fa-linkedin fa-xl"></i></li>
-                    <li><i class="fa-solid fa-basketball fa-lg"></i></li>
-                </ol>
-            </div>
-        </div>
-    </section>
+					<div class="testimonial-card">
+						<p class="testimonial-comments">
+							The explainations are clear, teachers are responsible and friendly
+							and the homework is real practice
+						</p>
+						<div class="person-details">
+							<img
+								class="testimonial-person-image"
+								src="illustration\testimonial-1.webp"
+								alt="testimonial-person-image"
+							/>
+							<div class="person-details2">
+								<p><b>Rob Zuber</b></p>
+								<p class="person-job-title">CEO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-controls">
+					<button class="prev-btn">
+						<i class="fa-solid fa-arrow-left fa-xl"></i>
+					</button>
+					<button class="next-btn">
+						<i class="fa-solid fa-arrow-right fa-xl"></i>
+					</button>
+				</div>
+			</section>
+		</section>
 
-    <script src="index.js"></script>
-</body>
+		<section id="footer">
+			<div class="footer-container-1">
+				<div class="logo">
+					<img src="illustration\logo.png" alt="Company Logo" />
+				</div>
+				<div class="quick-nav">
+					<a href="#">Find Passion</a>
+					<a href="#">Categories</a>
+					<a href="#">Skills</a>
+					<a href="#">Customer</a>
+				</div>
+				<div class="join-our-community">
+					<h3>Join Our Community</h3>
+					<form class="join-com-form" action="">
+						<input
+							class="join-com-textfield"
+							type="text"
+							name=""
+							id=""
+							placeholder="Enter Your Email"
+						/>
+						<input class="join-com-btn" type="button" value="GO" />
+					</form>
+				</div>
+			</div>
+			<hr />
+			<div class="footer-container-2">
+				<div class="copyright">
+					<p>&#x24B8; All rights belong to Skillex</p>
+				</div>
+				<div class="socials">
+					<ol class="socials-list">
+						<li><i class="fa-brands fa-facebook fa-lg"></i></li>
+						<li><i class="fa-brands fa-instagram fa-lg"></i></li>
+						<li><i class="fa-brands fa-linkedin fa-xl"></i></li>
+						<li><i class="fa-solid fa-basketball fa-lg"></i></li>
+					</ol>
+				</div>
+			</div>
+		</section>
 
+		<script src="index.js"></script>
+	</body>
 </html>
