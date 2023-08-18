@@ -22,7 +22,14 @@ a {
 .flex-container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+
 }
+
+.hamburger-icon {
+	display: none;
+}
+
 
 hr {
 	background-color: #2d4059;
@@ -77,31 +84,30 @@ hr {
 	width: 140px;
 	height: 50px;
 }
+
 /* Navigation css */
 
 /* Homepage css */
 #home {
 	margin-top: 45px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .main-title-form {
 	align-items: center;
+	justify-content: center;
 	display: flex;
 }
 
 .main-text {
 	position: relative;
-	left: 100px;
-	bottom: 50px;
-	width: 25%;
+	left: 70px;
 	font-size: 2.7rem;
 	font-weight: 700;
 	z-index: 9;
-
-	/* temp */
-	pointer-events: none;
 }
 
 .input-passion {
@@ -135,13 +141,14 @@ hr {
 	display: flex;
 	gap: 3rem;
 	width: 100%;
-	max-width: 45vw;
+	max-width: 43vw;
+	margin: 0 25px 0 0;
 }
 
 .hero-card {
-	display: flex;
+	/* display: flex; */
 	position: relative;
-	flex-basis: 200px;
+	flex-basis: 10rem;
 	flex-shrink: 1;
 	flex-grow: 0;
 	transition: 0.5s;
@@ -156,6 +163,7 @@ hr {
 	transition: 0.5s;
 	overflow: hidden;
 	position: relative;
+	
 }
 
 .hero-card.hovered,
@@ -190,6 +198,7 @@ hr {
 	font-size: 1rem;
 	translate: -50% 0;
 	bottom: 5px;
+	
 }
 
 .hero-card .img-container img {
@@ -200,6 +209,8 @@ hr {
 	position: absolute;
 	left: 50%;
 	translate: -50% 0;
+	isolation: isolate;
+	
 }
 
 .hero-card .img-container::after {
@@ -209,11 +220,9 @@ hr {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 0.5) 0%,
-		rgba(0, 0, 0, 0) 100%
-	);
+	background: linear-gradient(0deg,
+			rgba(0, 0, 0, 0.5) 0%,
+			rgba(0, 0, 0, 0) 100%);
 }
 
 .hero-card .desc {
@@ -252,13 +261,16 @@ hr {
 
 #feature1-list {
 	display: flex;
+	flex-wrap: wrap;
 	width: fit-content;
 	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
 }
 
 #feature1-list li {
 	display: inline;
-	margin: 0 15px;
+	margin: 0 15px 10px 0;
 	font-size: 1.2rem;
 }
 
@@ -283,12 +295,16 @@ hr {
 
 .feature1-flex-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	align-items: baseline;
 	gap: 35px;
+	margin-bottom: 35px;
 }
 
 .feature1-flex-container div img {
-	width: 300px;
+	width: 290px;
 	border-radius: 15px;
 }
 
@@ -356,28 +372,18 @@ hr {
 .feature2-main-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: baseline;
 }
 
 .main-title {
 	font-size: 1.6rem;
-	width: 55%;
 }
 
 .main-desc {
 	font-size: 1.4rem;
 	font-weight: 500;
-	width: 45%;
 	color: #00000075;
-}
-
-@media screen and (max-width: 1080px) {
-	.main-title {
-		width: 100%;
-	}
-	.main-desc {
-		width: 100%;
-	}
 }
 
 .achievements {
@@ -389,6 +395,7 @@ hr {
 	position: relative;
 	top: 25px;
 }
+
 
 .achievements hr {
 	rotate: 90deg;
@@ -461,12 +468,15 @@ hr {
 
 .body-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	align-items: center;
 }
 
 .rand-video {
-	width: 100%;
+	width: 750px;
 }
 
 /* Feature 2 css */
@@ -506,8 +516,8 @@ hr {
 .prev-btn,
 .next-btn {
 	position: relative;
-	height: 5vh;
-	width: 3.75vw;
+	height: 2.5rem;
+	width: 2.5rem;
 
 	border: solid rgba(0, 0, 0, 0.2);
 	border-width: 0.5px;
@@ -610,6 +620,7 @@ hr {
 	grid-column: span 2;
 	margin-bottom: 10px;
 }
+
 /* Testimonial css */
 
 /* Footer css */
@@ -621,12 +632,10 @@ hr {
 
 .footer-container-1 {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	width: 100%;
 	align-items: center;
-}
-
-.logo {
-	margin: 0 auto 0 auto;
 }
 
 .logo img {
@@ -636,7 +645,8 @@ hr {
 .quick-nav {
 	display: flex;
 	flex-wrap: wrap;
-	width: 80%;
+	justify-content: center;
+	align-items: center;
 }
 
 .quick-nav a {
@@ -648,6 +658,10 @@ hr {
 	border: solid #000;
 	border-width: 0 0 1px 0;
 	scale: 1.05;
+}
+
+.join-our-community {
+	text-align: center;
 }
 
 .join-com-form {
@@ -663,7 +677,8 @@ hr {
 }
 
 .join-com-btn {
-	width: 3vw;
+	width: 50px;
+	height: 50px;
 	border: none;
 	background-color: lightsalmon;
 }
@@ -696,3 +711,180 @@ hr {
 }
 
 /* Footer css */
+
+/* V nav bar css */
+#vertical-nav-bar {
+	position: absolute;
+	height: 0;
+	top: 100px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	transition: 0.25s;
+	overflow: hidden;
+	background-color: whitesmoke;
+	z-index: 10;
+}
+
+.v-nav-bar-list {
+	list-style: none;
+	text-align: center;
+	transition: 0.25s;
+}
+
+.v-nav-bar-list li a {
+	transition: 0.25s;
+	font-size: 1.4rem;
+	font-weight: 100;
+	opacity: 0;
+}
+
+.v-nav-bar-list li {
+	margin-bottom: 15px;
+}
+
+#vertical-nav-bar.active {
+	height: 200px;
+}
+
+#vertical-nav-bar.active .v-nav-bar-list li a {
+	opacity: 1;
+}
+/* V nav bar css */
+
+
+
+@media only screen and (max-width: 1760px) {
+	#navigation-bar,
+	#home,
+	#feature1,
+	#feature2,
+	#footer {
+		padding: 0 12.5%;
+	}
+
+	.list-of-skills {
+		margin: 35px;
+	}
+
+	/* .main-title, .main-desc {
+		width: 100%;
+		text-align: center;
+	}
+
+	.achievements {
+		margin: 0 auto 30px auto;
+		top: 10px;
+	} */
+}
+
+
+@media only screen and (max-width: 1433px) {
+	#navigation-bar,
+	#home,
+	#feature1,
+	#feature2,
+	#footer {
+		padding: 0 10%;
+	}
+
+	.nav-bar-content {
+		display: none;
+	}
+	.nav-bar-util {
+		display: none;
+	}
+	.hamburger-icon {
+		display: block;
+	}
+
+	
+	.main-title, .main-desc {
+		width: 100%;
+		text-align: center;
+	}
+
+	.achievements {
+		margin: 0 auto 30px auto;
+		top: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 1214px) {
+	#navigation-bar,
+	#home,
+	#feature1,
+	#feature2,
+	#footer {
+		padding: 0 7.5%;
+	}
+}
+
+@media only screen and (max-width: 1072px) {
+	#navigation-bar,
+	#home,
+	#feature1,
+	#feature2,
+	#footer {
+		padding: 0 5%;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	#home {
+		display: block;
+	}
+
+	.main-text {
+		text-align: center;
+		margin-bottom: 30px;
+		left: 0;
+		text-align: center;
+	}
+
+	#not-ideal-1 {
+		gap: 1.5rem;
+		overflow: hidden;
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+	.list-of-skills {
+		display: block;
+	}
+
+	.leadership,
+	.responsibility,
+	.flexibility {
+		display: block;
+		text-align: center;
+	}
+
+	.star-icon,
+	.responsibility-icon,
+	.flexibility-icon {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.list-of-skills {
+		margin: 0 0 35px 0;
+	}
+
+	.rand-video {
+		width: 90vw;
+	}
+}
+
+
+@media only screen and (max-width: 550px) {
+	#navigation-bar,
+	#home,
+	#feature1,
+	#feature2,
+	#footer {
+		padding: 0 1%;
+	}
+}

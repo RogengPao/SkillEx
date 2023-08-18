@@ -54,3 +54,11 @@ testimonialContainer.forEach((item, i) => {
 		item.scrollLeft -= containerWidth;
 	});
 });
+
+
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+
+hamburgerIcon.addEventListener("click", (event) => {
+	event.preventDefault();
+	document.querySelector("#vertical-nav-bar").classList.toggle("active");
+})
